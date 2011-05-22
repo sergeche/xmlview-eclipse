@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            name="XV Browser"
+            id="ru.chikuyonok.xv">
+      </category>
+      <view
+            name="XV Browser"
+            icon="icons/browser.gif"
+            category="ru.chikuyonok.xv"
+            class="ru.chikuyonok.xv.views.XVBrowserView"
+            id="ru.chikuyonok.xv.views.XVBrowserView">
+      </view>
+   </extension>
+   
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            class="ru.chikuyonok.xv.views.XVBrowserEditor"
+            extensions="xml,xsl"
+            icon="icons/browser.gif"
+            id="ru.chikuyonok.xv.browser.editor"
+            name="XV Browser"/>
+  </extension>
+</plugin>
